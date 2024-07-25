@@ -35,6 +35,19 @@
             Console.WriteLine("Sorted array is: ");
             PrintArray(arr);
             #endregion
+
+            #region Question 2
+            Range<int> intRange = new Range<int>(5, 15);
+            Console.WriteLine("Is 10 in range? " + intRange.IsInRange(10)); // True
+            Console.WriteLine("Is 20 in range? " + intRange.IsInRange(20)); // False
+            Console.WriteLine("Length of range: " + intRange.Length()); // 10
+
+  
+            Range<double> doubleRange = new Range<double>(1.5, 4.5);
+            Console.WriteLine("Is 3.0 in range? " + doubleRange.IsInRange(3.0)); // True
+            Console.WriteLine("Is 5.0 in range? " + doubleRange.IsInRange(5.0)); // False
+            Console.WriteLine("Length of range: " + doubleRange.Length()); // 3.0
+            #endregion
         }
         #region Question 1
         static void OptimizedBubbleSort(int[] arr)
